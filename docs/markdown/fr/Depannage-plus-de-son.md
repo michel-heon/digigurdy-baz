@@ -63,9 +63,9 @@ Avant de distinguer les cas A et B, vérifiez les points de base suivants :
      - vérifiez que les volumes des canaux de **mélodie**, **bourdon** et **trompette** ne sont pas à 0,
      - pour un test, placez ces canaux à une valeur comprise entre **80 et 100**.
 
-3. **Mute des cordes**
-   - Certains réglages permettent de muter toutes les cordes via les boutons EX ou le menu pause.
-   - Dans le menu pause, modifiez la combinaison de mute (via `A`/`B` ou les boutons EX configurés à cet effet) jusqu’à obtenir au moins :
+3. **Mise en sourdine des cordes**
+   - Certains réglages permettent de mettre toutes les cordes en sourdine via les boutons EX ou le menu pause.
+   - Dans le menu pause, modifiez la combinaison de mise en sourdine (via `A`/`B` ou les boutons EX configurés à cet effet) jusqu’à obtenir au moins :
      - **une corde de mélodie active**,
      - et, idéalement, un **bourdon** actif.
 
@@ -145,9 +145,9 @@ Pour vérifier que le **module audio interne de la gurdy** fonctionne correcteme
 1. **Instrument chargé**
    - Assurez‑vous qu’un instrument (soundfont, VSTi, preset) est bien chargé sur le ou les canaux MIDI utilisés par la Digigurdy (en particulier le canal 1 pour la mélodie aiguë).
 
-2. **Volume / Mute**
+2. **Volume / Mise en sourdine**
    - Dans BS‑16i ou votre DAW :
-     - le canal est‑il en **mute** ?
+   - le canal est‑il en **sourdine** ?
      - le **volume** du canal et du master n’est‑il pas à zéro ?
 
 3. **Périphérique audio de sortie**

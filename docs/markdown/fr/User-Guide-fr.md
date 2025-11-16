@@ -96,7 +96,7 @@ La Digigurdy utilise les canaux suivants :
 2. Mélodie grave
 3. Trompette
 4. Bourdon
-5. Buzz
+5. Bourdon/coup (buzz)
 6. Clic de touches
 
 ### Support Tsunami/Trigger
@@ -123,10 +123,10 @@ Toutes les Digi-Gurdies ne possèdent pas l'ensemble des boutons présentés ici
 * **Tpose Up/Down, Capo** _(les tout premiers modèles n'ont pas ces boutons)_ – pendant le jeu, ils servent à transposer les cordes et à faire défiler les options de capo (plus de détails plus loin)
 * **EX1–EX3** _(les modèles à manivelle à engrenages n'ont pas ces boutons)_ – ces boutons ont un comportement configurable, mais par défaut :
   * EX1 ouvre le menu pause pendant le jeu
-  * EX2 fait défiler les combinaisons de mute des cordes de mélodie
-  * EX3 fait défiler les combinaisons de mute du bourdon et de la trompette
+  * EX2 fait défiler les combinaisons de mise en sourdine des cordes de mélodie
+  * EX3 fait défiler les combinaisons de mise en sourdine du bourdon et de la trompette
 * **Auto-crank** (le « gros bouton ») – ce bouton active ou coupe les cordes comme si vous tourniez la manivelle.
-* **Sensibilité du buzz** _(les modèles portables sans manivelle n'ont pas ce bouton)_ – ce potentiomètre ajuste la vitesse de manivelle nécessaire pour déclencher le buzz/coup de trompette. Il peut avoir une LED qui s'allume lorsque vous buzzez (les modèles antérieurs aux pédales accessoires possédaient cette LED).
+* **Sensibilité de bourdon/coup** _(les modèles portables sans manivelle n'ont pas ce bouton)_ – ce potentiomètre ajuste la vitesse de manivelle nécessaire pour déclencher le bourdon/coup de trompette. Il peut avoir une LED qui s'allume lorsque vous déclenchez ce bourdon/coup (les modèles antérieurs aux pédales accessoires possédaient cette LED).
 
 ### Combinaisons de touches
 
@@ -149,13 +149,13 @@ Une fois connectée à votre échantillonneur MIDI (ou après avoir branché un 
 
 _(Manivelle optique uniquement :)_ si vous utilisez la manivelle, le volume variera légèrement selon la vitesse de rotation (comme sur une vraie vielle).
 
-En tournant très vite, vous déclenchez le buzz/coup de la trompette. À tout moment, vous pouvez ajuster la sensibilité du buzz à l'aide du potentiomètre. Quand il est tourné à fond dans le sens horaire (sensibilité minimale), le buzz est pratiquement désactivé.
+En tournant très vite, vous déclenchez le bourdon/coup de la trompette. À tout moment, vous pouvez ajuster la sensibilité de ce bourdon/coup à l'aide du potentiomètre. Quand il est tourné à fond dans le sens horaire (sensibilité minimale), ce bourdon/coup est pratiquement désactivé.
 
 _(Seules les gurdies postérieures à nov. 2022 disposent d'une prise accessoire.)_ Si vous utilisez une pédale accessoire de vibrato et qu'elle est activée (voir la section « Autres options » ci‑dessous), elle ajuste l'intensité de l'effet de modulation de votre échantillonneur MIDI, ce qui, avec BS-16i, produit un effet de vibrato sur les canaux de mélodie.
 
 Pendant le jeu, vous pouvez ajuster la transposition des cordes avec les boutons `Tpose` (ou la combinaison de touches) par demi‑tons, sur une octave vers le haut ou vers le bas à partir de l'accordage choisi. Vous pouvez également mettre un capo sur les cordes de bourdon/trompette de un ou deux tons entiers (comme le permettraient de vrais capos sur une vielle) à l'aide du bouton `Capo` ou de la combinaison de touches.
 
-Les options de boutons EX sont aussi disponibles pendant le jeu, par exemple pour muter certaines cordes à la volée. _(Modèles à manivelle optique uniquement.)_
+Les options de boutons EX sont aussi disponibles pendant le jeu, par exemple pour mettre certaines cordes en sourdine à la volée. _(Modèles à manivelle optique uniquement.)_
 
 Le menu pause est accessible en appuyant sur `X+A`, ou via un bouton EX (`EX1` par défaut). Toute note en cours est alors arrêtée.
 
@@ -163,7 +163,7 @@ Le menu pause est accessible en appuyant sur `X+A`, ou via un bouton EX (`EX1` p
 
 ## Le Menu Pause
 
-Le menu pause permet d'accéder à tous les autres réglages de la Digigurdy. Dans tous les menus, les sélections se font avec les touches `1–6` et `X`, les fonctions étant indiquées à l'écran. Dans le menu pause principal, les touches `A` et `B` font également défiler les combinaisons de mute.
+Le menu pause permet d'accéder à tous les autres réglages de la Digigurdy. Dans tous les menus, les sélections se font avec les touches `1–6` et `X`, les fonctions étant indiquées à l'écran. Dans le menu pause principal, les touches `A` et `B` font également défiler les combinaisons de mise en sourdine.
 
 ### Charger
 
@@ -171,7 +171,7 @@ Le menu Charger permet de charger l'un des quatre accordages prédéfinis pour l
 
 ### Sauvegarder
 
-Le menu Sauvegarder sert à enregistrer votre configuration actuelle dans l'un des quatre emplacements de sauvegarde. En plus de l'accordage de chaque corde, la transposition/capo actuelle et le volume de chaque corde/canal sont également enregistrés dans cet emplacement. Les réglages de mute ne font _pas_ partie des paramètres d'accordage.
+Le menu Sauvegarder sert à enregistrer votre configuration actuelle dans l'un des quatre emplacements de sauvegarde. En plus de l'accordage de chaque corde, la transposition/capo actuelle et le volume de chaque corde/canal sont également enregistrés dans cet emplacement. Les réglages de mise en sourdine ne font _pas_ partie des paramètres d'accordage.
 
 _Remarque : définir un accordage (comme décrit plus bas) ne le sauvegarde PAS ! Vous devez enregistrer votre configuration séparément si vous voulez la conserver pour plus tard._
 
@@ -185,7 +185,7 @@ Pour l'accordage guidé, sélectionnez G/C ou D/C pour commencer, puis suivez le
 
 #### Accordage manuel
 
-Ce mode vous donne un contrôle total sur l'accordage des quatre cordes et du son de buzz (la note de clic de touches n'est pas ajustable). Vous pouvez d'abord choisir un accordage guidé, puis le modifier ensuite ici, ou aller directement dans ce menu et définir chaque note explicitement.
+Ce mode vous donne un contrôle total sur l'accordage des quatre cordes et sur le son de bourdon/coup (la note de clic de touches n'est pas ajustable). Vous pouvez d'abord choisir un accordage guidé, puis le modifier ensuite ici, ou aller directement dans ce menu et définir chaque note explicitement.
 
 #### Volume
 
@@ -223,10 +223,10 @@ _Nouveau en 2.5 :_ le bouton d'auto-crank est maintenant aussi configurable et a
 
 Fonctions disponibles pour les boutons EX :
 * Ouvrir le menu pause
-* Faire défiler les combinaisons de mute des cordes de mélodie
-* Faire défiler les combinaisons de mute du bourdon et de la trompette
-* Basculer le mute du bourdon
-* Basculer le mute de la trompette
+* Faire défiler les combinaisons de mise en sourdine des cordes de mélodie
+* Faire défiler les combinaisons de mise en sourdine du bourdon et de la trompette
+* Basculer la mise en sourdine du bourdon
+* Basculer la mise en sourdine de la trompette
 * Baisser le volume
 * Augmenter le volume
 * Transposer vers le bas
@@ -242,7 +242,7 @@ Nouvelles options de configuration d'affichage depuis la version 2.2.0 :
   * **Scientifique/ABC** – do central = C4.
   * **Solfège/DoRéMi** – solfège « do fixe », le do central s'affiche "Do4".
   * **Combo** – les notes sont affichées dans les deux notations. Le do central s'affiche « C4/DO4 ».
-* **Activer/Désactiver l'indicateur de buzz** – si activé, un fin cadre rectangulaire clignote à l'écran lorsqu'un buzz est détecté. Ce réglage est persistant et constitue une alternative à la LED de buzz pour les modèles qui n'en ont pas.
+* **Activer/Désactiver l'indicateur de bourdon/coup** – si activé, un fin cadre rectangulaire clignote à l'écran lorsqu'un bourdon/coup est détecté. Ce réglage est persistant et constitue une alternative à la LED de bourdon/coup pour les modèles qui n'en ont pas.
 * **Choisir l'écran de jeu** – choisir entre six affichages pendant que la gurdy joue :
   * Une grande note bitmap (notation ABC) + une portée affichant la note
   * Une grande note textuelle (correspondant à la notation choisie) + une portée
@@ -255,7 +255,7 @@ Nouvelles options de configuration d'affichage depuis la version 2.2.0 :
 
 * **Sortie secondaire** – en plus du MIDI USB, vous pouvez choisir entre l'utilisation de la prise MIDI‑OUT comme seconde sortie, ou d'une sortie audio Trigger/Tsunami.
 * **Vibrato de mélodie MIDI** – en mode MIDI, une valeur de modulation constante peut être envoyée sur les cordes de mélodie, pour simuler un vibrato sur les touches. Vous pouvez régler ici l'intensité (ou désactiver la fonction). Personnellement, j'utilise la valeur 16 si vous voulez essayer. La valeur par défaut est 0.
-* **LED de buzz** – si votre gurdy dispose d'une LED d'indication de buzz/coup, vous pouvez l'activer ou la désactiver ici. Ce réglage est persistant. Si votre version du code n'a pas le support LED activé à la compilation, cette option n'apparaîtra pas.
+* **LED de bourdon/coup** – si votre gurdy dispose d'une LED d'indication de bourdon/coup, vous pouvez l'activer ou la désactiver ici. Ce réglage est persistant. Si votre version du code n'a pas le support LED activé à la compilation, cette option n'apparaîtra pas.
 * **Pédale accessoire** – si votre gurdy possède une prise pédale accessoire, vous pouvez l'activer ici. Elle est désactivée par défaut à chaque mise sous tension, car l'activer sans pédale branchée provoque un comportement étrange. Si votre version du code n'intègre pas le support de la pédale, cette option n'apparaîtra pas.
 
 ### Aide

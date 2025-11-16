@@ -32,14 +32,14 @@ Dans ce mode, la Digigurdy se comporte comme un **instrument autonome**.
 
 ---
 
-## 2. Tester le buzz (coup de trompette)
+## 2. Tester le bourdon/coup de trompette
 
 1. Commencez par tourner la manivelle à vitesse normale : vous entendez la note « simple ».
 2. Augmentez progressivement la vitesse :
-   - à partir d’un certain seuil, vous devez entendre un **buzz** (coup de trompette),
-   - si le buzz est difficile à déclencher ou au contraire trop facile, ajustez le **potentiomètre de buzz** pour modifier la sensibilité.
+   - à partir d’un certain seuil, vous devez entendre un **bourdon/coup** de trompette (souvent appelé « buzz »),
+   - si ce bourdon/coup est difficile à déclencher ou au contraire trop facile, ajustez le **potentiomètre de bourdon/coup** pour modifier la sensibilité.
 
-Le buzz servira ensuite à marquer le **rythme** du jeu.
+Ce bourdon/coup servira ensuite à marquer le **rythme** du jeu.
 
 ---
 
@@ -82,7 +82,7 @@ Une fois que :
 
 - vous avez entendu une **première note** dans le casque ou l’amplificateur,
 - vous savez tourner la manivelle ou utiliser le bouton auto‑crank,
-- vous êtes parvenu à déclencher un **buzz**,
+- vous êtes parvenu à déclencher un **bourdon/coup**,
 
 vous pouvez aller plus loin :
 

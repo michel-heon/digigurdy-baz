@@ -130,7 +130,7 @@ Par défaut :
 2. Mélodie grave
 3. Trompette
 4. Bourdon
-5. Buzz
+5. Bourdon/coup (buzz)
 6. Clic des touches
 
 Votre échantillonneur doit être configuré pour que chaque canal produise le son souhaité.
@@ -163,12 +163,12 @@ Vous pouvez jouer même sans appareil externe pour le son, tant que le module au
 
 - **1–6** : sélection dans les menus.
 - **X** : retour / annulation dans les menus.
-- **A / B** : navigation supplémentaire (menu pause, mute, etc.).
+- **A / B** : navigation supplémentaire (menu pause, mise en sourdine, etc.).
 - **Tpose Up/Down** : transposition en demi‑tons.
 - **Capo** : changement de capo (bourdon/trompette).
-- **EX1–EX3** : boutons configurables (mute, pause, transposition, etc.).
+- **EX1–EX3** : boutons configurables (mise en sourdine, pause, transposition, etc.).
 - **Auto‑crank (Big)** : simule la rotation de la roue (cordes on/off).
-- **Potentiomètre de buzz** : règle la sensibilité du buzz/coup de trompette.
+- **Potentiomètre de bourdon/coup** : règle la sensibilité du bourdon/coup de trompette.
 
 ---
 
@@ -191,7 +191,7 @@ Si nécessaire, la détection peut être relancée depuis le menu « Autres opti
 
 ---
 
-## 19. Comment choisir, charger et sauvegarder un accordage (tuning) ?
+## 19. Comment choisir, charger et sauvegarder un accordage ?
 
 - **Charger** : dans le menu pause → « Load », vous pouvez choisir :
   - un des 4 accordages prédéfinis (G/C, D/G, etc.),
@@ -202,14 +202,14 @@ Si nécessaire, la détection peut être relancée depuis le menu « Autres opti
   - le volume par canal,
   dans l’un des 4 emplacements de sauvegarde.
 
-Les états de mute ne sont pas sauvegardés avec l’accordage.
+Les états de mise en sourdine ne sont pas sauvegardés avec l’accordage.
 
 ---
 
 ## 20. Quelle est la différence entre accordage guidé et accordage manuel ?
 
 - **Guidé** : vous sélectionnez une base (G/C ou D/G), puis la Digigurdy propose des choix cohérents pour chaque corde, inspirés des vielles acoustiques.
-- **Manuel** : vous choisissez directement la note de chaque corde et du son de buzz, sans contrainte, pour des configurations totalement personnalisées.
+- **Manuel** : vous choisissez directement la note de chaque corde et du son de bourdon/coup, sans contrainte, pour des configurations totalement personnalisées.
 
 ---
 
@@ -220,21 +220,21 @@ Dans le menu Accordage → « Volume », vous pouvez régler le volume MIDI (0�
 - 2 canaux de mélodie,
 - trompette,
 - bourdon,
-- buzz,
+- bourdon/coup,
 - clic des touches.
 
 La valeur par défaut est 70. Ce volume est **en plus** du volume interne de votre sampler (BS‑16i, etc.).
 
 ---
 
-## 22. Comment fonctionne le buzz / coup de trompette ?
+## 22. Comment fonctionne le bourdon/coup de trompette ?
 
-Le buzz se déclenche lorsque la vitesse de rotation de la manivelle dépasse un certain seuil.
+Le bourdon/coup se déclenche lorsque la vitesse de rotation de la manivelle dépasse un certain seuil.
 
-Le potentiomètre de buzz ajuste cette sensibilité :
+Le potentiomètre de bourdon/coup ajuste cette sensibilité :
 
-- tourné à fond dans le sens horaire → sensibilité minimale (buzz presque désactivé),
-- tourné dans l’autre sens → buzz plus facile à déclencher.
+- tourné à fond dans le sens horaire → sensibilité minimale (bourdon/coup presque désactivé),
+- tourné dans l’autre sens → bourdon/coup plus facile à déclencher.
 
 ---
 
@@ -268,7 +268,7 @@ Ces réglages sont sauvegardés si vous enregistrez un accordage dans un emplace
 Dans le menu « Autres options » → « EX Button Configuration », vous pouvez attribuer à chaque bouton (EX1–EX3, et aussi Tpose/Capo/Big dans les versions 2.4+ et 2.5+) des fonctions telles que :
 
 - ouvrir le menu pause,
-- activer/désactiver certaines cordes (mute / unmute),
+- activer/désactiver certaines cordes (mise en sourdine / retour du son),
 - augmenter/diminuer le volume,
 - transposer vers le haut/bas,
 - faire défiler les réglages de capo,
