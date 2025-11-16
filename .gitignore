@@ -1,0 +1,25 @@
+# Ignorer le miroir du wiki GitHub
+/docs/digigurdy-baz.wiki/
+
+# Ignorer les fichiers de configuration de l'IDE
+.idea/
+.vscode/
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers de build
+build/
+dist/
+
+# Ignorer les fichiers de dépendances
+node_modules/
+vendor/
+
+# Ignorer les fichiers de cache
+*.cache
+*.tmp
+
+# Ignorer les fichiers de configuration du système
+.DS_Store
+Thumbs.db

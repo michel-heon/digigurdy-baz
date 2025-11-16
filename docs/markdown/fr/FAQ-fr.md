@@ -1,0 +1,341 @@
+# FAQ Digigurdy (FR)
+
+> Pour les problèmes de son (plus de son, mode MIDI vs audio, etc.), voir aussi : [Dépannage – Plus de son sur la Digigurdy](Depannage-plus-de-son.md).
+
+## 1. Qu’est‑ce que la Digigurdy et de quoi ai‑je besoin pour l’utiliser ?
+
+La Digigurdy est une vielle à roue électronique qui agit comme un contrôleur MIDI (et, selon le modèle, comme un lecteur d’échantillons audio via Tsunami/Trigger). Pour l’utiliser, il te faut :
+
+- une source d’alimentation (USB ou batterie 18650 interne),
+- un appareil qui lit le MIDI (PC, tablette, smartphone, module externe),
+- un logiciel ou un module sonore (par exemple BS‑16i sur iOS, un sampler sur PC, etc.).
+
+---
+
+## 2. Comment mettre à jour le firmware / code de ma Digigurdy ?
+
+Tu peux télécharger une version pré‑compilée (fichier `.hex`) depuis le dépôt GitHub, puis la téléverser avec ton ordinateur. Le guide d’installation par fichier hex se trouve ici :
+
+<https://github.com/bazmonk/digigurdy-baz/wiki/install-by-hex>
+
+---
+
+## 3. Quels types d’alimentation puis‑je utiliser ?
+
+- Port USB‑B (depuis un chargeur, un PC, une powerbank, etc.),
+- Batterie interne basée sur une cellule 18650 *non protégée*,
+- Certains téléphones / tablettes USB‑C capables de fournir du courant.
+
+La consommation est typiquement 130–240 mA, bien en dessous de la limite USB de 500 mA.
+
+---
+
+## 4. Comment installer et charger la batterie 18650 interne ?
+
+1. Acheter une 18650 **non protégée**.
+2. Dévisser le couvercle de la Digigurdy pour sortir le module de powerbank.
+3. Insérer la batterie dans le logement prévu (respecter la polarité).
+4. Replacer le module et revisser.
+5. Charger la batterie avec un câble micro‑USB.
+
+Une charge complète donne environ 15 h de jeu.
+
+---
+
+## 5. Ma tablette ou mon téléphone peut‑il alimenter directement la Digigurdy ?
+
+- Les appareils USB‑C récents le peuvent souvent, mais pas tous.
+- Les anciens iPad avec connecteur Lightning, par exemple, ne fournissent pas assez de courant.
+
+Dans ce cas, un « adaptateur appareil photo » Apple ou équivalent (avec alimentation externe + USB) est recommandé.
+
+---
+
+## 6. À quoi sert l’option « Reset All Settings » au démarrage ?
+
+Cette option efface tous les paramètres persistants et rétablit les valeurs par défaut (y compris les préréglages sauvegardés).
+
+Elle est **fortement recommandée après une mise à jour du firmware** pour éviter des comportements bizarres liés à des changements de structure mémoire.
+
+---
+
+## 7. Comment connecter la Digigurdy en MIDI via USB ?
+
+Branche simplement la prise USB‑B de la Digigurdy sur :
+
+- un ordinateur,
+- un iPad (via adaptateur si nécessaire),
+- ou un smartphone compatible OTG/USB‑C.
+
+Le même câble sert à l’alimentation et au transport des messages MIDI. Dans ton logiciel audio (DAW, BS‑16i, etc.), sélectionne la Digigurdy comme périphérique MIDI d’entrée.
+
+---
+
+## 8. Comment utiliser la sortie MIDI 5‑broches et le MIDI Bluetooth ?
+
+La prise MIDI‑OUT 5 broches envoie le même flux MIDI que l’USB. Tu peux y brancher :
+
+- un synthé ou expander hardware,
+- un adaptateur MIDI Bluetooth.
+
+Avec un adaptateur Bluetooth + la batterie interne, tu obtiens une solution presque entièrement sans fil.
+
+---
+
+## 9. Pourquoi éviter les écouteurs / casques Bluetooth ?
+
+Les casques Bluetooth introduisent une latence audio perceptible, ce qui rend le jeu désagréable.
+
+Le MIDI Bluetooth fonctionne bien car il transporte très peu de données, mais l’audio Bluetooth reste trop lent dans la plupart des cas, sauf éventuellement certains couples AirPods + appareil Apple.
+
+---
+
+## 10. Qu’est‑ce que BS‑16i et pourquoi est‑il recommandé ?
+
+BS‑16i est une application iOS qui lit des soundfonts (fichiers SF2) et sert de synthétiseur/échantillonneur MIDI :
+
+- peu coûteuse,
+- stable,
+- compatible avec USB MIDI et MIDI Bluetooth.
+
+Elle est devenue la solution « standard » recommandée pour la Digigurdy sur iPad/iPhone.
+
+---
+
+## 11. Quelles sont les options pour utiliser un PC Windows comme lecteur de sons MIDI ?
+
+Il est possible d’utiliser un PC Windows avec :
+
+- un pilote MIDI,
+- un VSTi (synthé virtuel),
+- ou un lecteur de soundfont dédié.
+
+Une procédure détaillée est décrite dans le document `midi-on-win` indiqué dans le guide (`./midi-on-win`).
+
+---
+
+## 12. Où trouver les soundfonts de hurdy‑gurdy pour la Digigurdy ?
+
+Les soundfonts dédiées (issues du projet MIDIgurdy) se trouvent dans le répertoire `soundfonts/` du dépôt GitHub du projet.
+
+Tu peux les charger dans BS‑16i ou dans n’importe quel lecteur de soundfont compatible.
+
+---
+
+## 13. Quels canaux MIDI la Digigurdy utilise‑t‑elle ?
+
+Par défaut :
+
+1. Mélodie aiguë
+2. Mélodie grave
+3. Trompette
+4. Bourdon
+5. Buzz
+6. Clic des touches
+
+Tu dois configurer ton sampler pour que chaque canal produise le son souhaité.
+
+---
+
+## 14. Comment utiliser les échantillonneurs Tsunami ou Trigger intégrés ?
+
+Si ta Digigurdy est équipée d’un Tsunami ou Trigger :
+
+- elle peut sortir un **signal audio de niveau ligne** directement vers des enceintes amplifiées ou des écouteurs,
+- les sons sont stockés sur une carte microSD dans le module.
+
+Tu peux jouer même sans appareil externe pour le son, tant que le module audio est configuré et alimenté.
+
+---
+
+## 15. Comment installer les fichiers sur la carte microSD du Tsunami/Trigger ?
+
+1. Retirer la carte microSD du module.
+2. La connecter à un PC.
+3. Supprimer tous les fichiers présents.
+4. Extraire le ZIP Tsunami/Trigger fourni dans le dépôt.
+5. Copier **le contenu** du dossier `mono` ou `stereo` (pas le dossier lui‑même) à la racine de la carte.
+6. Éjecter proprement puis réinsérer la carte dans le module.
+
+---
+
+## 16. À quoi servent les différents boutons de la Digigurdy ?
+
+- **1–6** : sélection de menus.
+- **X** : retour / annulation dans les menus.
+- **A / B** : navigation supplémentaire (menu pause, mute, etc.).
+- **Tpose Up/Down** : transposition en demi‑tons.
+- **Capo** : changement de capo (bourdon/trompette).
+- **EX1–EX3** : boutons configurables (mute, pause, transposition, etc.).
+- **Auto‑crank (Big)** : simule la rotation de la roue (cordes on/off).
+- **Potentiomètre de buzz** : règle la sensibilité du buzz/coup de trompette.
+
+---
+
+## 17. Quelles sont les combinaisons de touches « cachées » importantes ?
+
+- `X + A` : ouvre le menu pause pendant le jeu.
+- `X + B` : fait défiler les options de capo.
+- `1 + T-UP/DOWN` : transpose vers le haut/bas.
+- `X + T-UP/DOWN` : augmente / diminue le volume global.
+
+---
+
+## 18. Comment fonctionne la détection de la manivelle ?
+
+Au démarrage, les modèles à manivelle à engrenages détectent automatiquement si la manivelle est connectée.
+
+Ne bouge pas la manivelle pendant ce test.
+
+Si besoin, tu peux relancer la détection depuis le menu « Autres options » du menu pause (option « Crank Detection »).
+
+---
+
+## 19. Comment choisir, charger et sauvegarder un accordage (tuning) ?
+
+- **Charger** : dans le menu pause → « Load », tu peux choisir :
+  - un des 4 accordages prédéfinis (G/C, D/G, etc.),
+  - ou un des 4 accordages personnalisés.
+- **Sauvegarder** : dans le menu pause → « Save », tu enregistres :
+  - l’accordage,
+  - la transposition/capo,
+  - le volume par canal,
+  dans un des 4 emplacements de sauvegarde.
+
+Les états de mute ne sont pas sauvegardés avec l’accordage.
+
+---
+
+## 20. Quelle est la différence entre accordage guidé et accordage manuel ?
+
+- **Guidé** : tu choisis une base (G/C ou D/G), puis la Digigurdy propose des choix cohérents pour chaque corde, inspirés des vraies vielles.
+- **Manuel** : tu choisis directement la note de chaque corde et du son de buzz, sans contrainte, pour des configurations totalement personnalisées.
+
+---
+
+## 21. Comment régler le volume de chaque canal ?
+
+Dans le menu Accordage → « Volume », tu peux régler le volume MIDI (0–127) de chaque canal :
+
+- 2 canaux de mélodie,
+- trompette,
+- bourdon,
+- buzz,
+- clic des touches.
+
+La valeur par défaut est 70. Ce volume est **en plus** du volume interne de ton sampler (BS‑16i, etc.).
+
+---
+
+## 22. Comment fonctionne le buzz / coup de trompette ?
+
+Le buzz se déclenche quand la vitesse de rotation de la manivelle dépasse un certain seuil.
+
+Le potentiomètre de buzz ajuste cette sensibilité :
+
+- tourné à fond dans le sens horaire → sensibilité minimale (buzz presque désactivé),
+- tourné dans l’autre sens → buzz plus facile à déclencher.
+
+---
+
+## 23. Comment utiliser la transposition (Tpose) et le capo pendant le jeu ?
+
+- **Transposition (Tpose)** : déplace toutes les notes par demi‑tons jusqu’à ±1 octave autour de l’accordage de base.
+- **Capo** : déplace la hauteur des bourdons/trompette par sauts de tons entiers (0, +2, +4 demi‑tons, etc.), comme un vrai capo sur une vielle.
+
+Tu peux aussi utiliser les combinaisons de touches `1 + T-UP/DOWN` et `X + B`.
+
+---
+
+## 24. À quoi sert le « menu secret amusant » ?
+
+Depuis le menu Accordage principal, appuie sur la touche « 6 » (même si aucune option 6 n’est affichée).
+
+Tu peux alors ajouter :
+
+- une quarte,
+- une quinte,
+- ou une octave inférieure
+
+à n’importe quelle corde, créant des doublures (drones, intervalles, etc.).
+
+Ces réglages sont sauvegardés si tu enregistres un accordage dans un slot.
+
+---
+
+## 25. Comment configurer les boutons EX, Tpose, Capo et Auto‑crank ?
+
+Dans le menu « Autres options » → « EX Button Configuration », tu peux attribuer à chaque bouton (EX1–EX3, et aussi Tpose/Capo/Big dans les versions 2.4+ et 2.5+) des fonctions comme :
+
+- ouvrir le menu pause,
+- mute / unmute de certaines cordes,
+- volume +/‑,
+- transpose +/‑,
+- cycle de capo,
+- activer/désactiver l’auto‑crank, etc.
+
+Ces réglages sont persistants et indépendants des slots d’accordage.
+
+---
+
+## 26. Quelles options de notation sont disponibles sur l’écran ?
+
+Dans « Screen Configuration », tu peux choisir :
+
+- **Scientific/ABC** : C4, D4, etc.
+- **Solfege/DoReMi** (do fixe) : Do4, Ré4, etc.
+- **Combo** : les deux à la fois, par exemple « C4/DO4 ».
+
+---
+
+## 27. Quels types d’écran de jeu puis‑je afficher pendant que je joue ?
+
+Toujours dans « Screen Configuration », tu peux choisir parmi :
+
+- grande note bitmap + portée,
+- grande note texte + portée,
+- uniquement la note bitmap,
+- uniquement la note texte,
+- uniquement la portée,
+- écran vide.
+
+---
+
+## 28. Comment activer le vibrato MIDI de mélodie et la pédale accessoire ?
+
+Dans « Input/Output Configuration » :
+
+- **MIDI Melody Vibrato** : règle une valeur de modulation constante sur les canaux de mélodie (par ex. 16 pour un léger vibrato dans BS‑16i).
+- **Accessory Pedal** : active l’entrée pédale (si support matériel + firmware). Elle est **désactivée par défaut à chaque démarrage** pour éviter des effets bizarres quand aucune pédale n’est branchée.
+
+---
+
+## 29. Que fait l’option « Clear EEPROM » au démarrage ?
+
+« Clear EEPROM » :
+
+- efface tous les slots d’accordage sauvegardés,
+- réinitialise la configuration des EX,
+- remet diverses options persistantes à leurs valeurs par défaut.
+
+À utiliser après une mise à jour majeure, ou si ta configuration semble corrompue et que tu veux repartir de zéro.
+
+---
+
+## 30. Comment fonctionne le « Scene Control » avec BS‑16i ?
+
+Le Scene Control permet de synchroniser :
+
+- le choix d’un accordage sur la Digigurdy,
+- avec le chargement automatique d’une « scène » BS‑16i.
+
+Principe :
+
+1. Dans BS‑16i, crée une scène (choix d’instruments, effets, volumes, etc.).
+2. Dans Settings → Scenes → Assignment, assigne un numéro à chaque scène.
+   - 0–3 → accordages prédéfinis de la Digigurdy,
+   - 4–7 → slots d’accordage sauvegardés.
+3. Dans Settings → CoreMIDI, active « Switch Scenes with Program Change » (Omni ou Channel 1).
+4. Dans la Digigurdy, active « Scene Control » dans le menu de démarrage.
+
+À partir de là, changer d’accordage sur la Digigurdy déclenchera automatiquement le changement de scène correspondant dans BS‑16i.
