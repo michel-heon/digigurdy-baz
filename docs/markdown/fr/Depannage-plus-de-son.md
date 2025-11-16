@@ -2,10 +2,10 @@
 
 Ce guide t’aide à diagnostiquer le cas où **ta Digigurdy n’émet plus de son**, alors qu’elle fonctionnait auparavant.
 
-> Il couvre à la fois :
+> Il couvre :
 > - l’utilisation avec **sortie audio intégrée** (Tsunami/Trigger + casque/ampli),
 > - l’utilisation comme **contrôleur MIDI**,
-> - et le cas particulier où la gurdy est restée en **mode MIDI uniquement** alors que tu attends du **son audio direct**.
+> - et le cas où la gurdy est restée en **mode MIDI** alors que tu attends du **son audio direct**.
 
 ---
 
