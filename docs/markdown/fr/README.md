@@ -23,3 +23,18 @@ Cette arborescence a pour but :
 - d’offrir une version francophone de la documentation facilement versionnable avec le code,
 - de permettre une génération éventuelle de site statique ou de PDF,
 - de servir de base à d’autres traductions ou extensions de la documentation.
+
+---
+
+## English summary
+
+This folder contains **French** documentation for the Digigurdy.
+
+Main files:
+
+- [User-Guide-fr.md](User-Guide-fr.md) – Full user guide (French translation of the original User Guide).
+- [Ma-premiere-utilisation-de-la-digigurdy.md](Ma-premiere-utilisation-de-la-digigurdy.md) – Very simple “first steps” guide.
+- [FAQ-fr.md](FAQ-fr.md) – Frequently Asked Questions in French.
+- [Depannage-plus-de-son.md](Depannage-plus-de-son.md) – Troubleshooting guide for “no sound” issues.
+
+For English documentation, please refer to the main project README and the GitHub wiki.

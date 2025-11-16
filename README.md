@@ -4,6 +4,10 @@ See [the wiki here](https://github.com/bazmonk/digigurdy-baz/wiki) for more docu
 
 See [the code documentation here](https://bazmonk.github.io/digigurdy-baz/html/index.html).
 
+For local documentation in this repository:
+- HTML (generated docs): `docs/html/index.html`
+- Markdown docs (FR): `docs/markdown/fr/README.md`
+
 **Check out version 3.0.0! (NEW)**
 
 * 3.0.0 -
@@ -60,7 +64,7 @@ See [the code documentation here](https://bazmonk.github.io/digigurdy-baz/html/i
   * Added QR codes as a help function (to User Guide), and after the about screen (to main Digi-Gurdy site)
 
 * 2.4.0 = 2.3.8 rebadged for main branch.  **Summary of changes since 2.2**:
-  * *Switch to hardware SPI screen wiring requirement.*
+  * *Switch to hardware SPI screen wiring requirement.* 
     * This brings significant speed improvements!
   * Button performance fixes
   * Geared crank support
@@ -240,10 +244,6 @@ See [the code documentation here](https://bazmonk.github.io/digigurdy-baz/html/i
   * Using the MIDI object the right way
   * Moved menu screen functions off to separate file
   * Cleaned up header tree and general structure.
-  * Compiled code less than 50% of 1.7.99.
-
-* 1.9.3 -
-  * I've been using the wrong `string` :-(  Migrated from `std::string` to `String`.
   * Compiled code got about 40% smaller.
 
 * 1.9.2 -
