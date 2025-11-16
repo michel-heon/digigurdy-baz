@@ -1,6 +1,6 @@
 # Documentation française Digigurdy
 
-Ce dossier contient la documentation en **français** pour la Digigurdy, en Markdown pur.
+Ce dossier contient la documentation en **français** pour la Digigurdy.
 
 ## Fichiers principaux
 
