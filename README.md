@@ -5,8 +5,8 @@ See [the wiki here](https://github.com/bazmonk/digigurdy-baz/wiki) for more docu
 See [the code documentation here](https://bazmonk.github.io/digigurdy-baz/html/index.html).
 
 For local documentation in this repository:
-- HTML (generated docs): `docs/html/index.html`
-- Markdown docs (FR): `docs/markdown/fr/README.md`
+- HTML (generated docs): [`docs/html/index.html`](docs/html/index.html)
+- French Markdown docs: [`docs/markdown/fr/README.md`](docs/markdown/fr/README.md)
 
 **Check out version 3.0.0! (NEW)**
 
